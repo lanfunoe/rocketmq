@@ -16,9 +16,11 @@
 
 ## 部署类型
 5.x 部分地区支持多可用区部署,相比单可用区部署，多可用区架构具备更强的容灾能力，可有效应对机房级故障，保障服务的高可用性。
+
 目前，URocketMQ 提供双可用区和三可用区两种部署模式：
-   - 双可用区部署：URocketMQ proxy, controller, broker, nameserver 分布在两个可用区内；
-   - 三可用区部署：URocketMQ proxy, controller, broker, nameserver 分布在三个可用区内。
+   - 双可用区部署：URocketMQ 同一实例所有节点分布在两个可用区内；
+   - 三可用区部署：URocketMQ 同一实例所有节点分布在三个可用区内。
+
 需要注意的是，多可用区部署涉及跨可用区通信，相比单可用区部署可能带来一定的性能损耗。
 
 
